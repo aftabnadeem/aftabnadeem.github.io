@@ -162,10 +162,10 @@ const PROJECTS = [
     icon: "🚀",
     iconBg: "rgba(108,99,255,0.12)",
     name: "PitchOS",
-    year: "2025",
-    live: true,
+    year: "2026",
+    live: false,
     github: "https://github.com/aftabnadeem",
-    liveUrl: "#",
+    liveUrl: null,
     desc: "Production-grade mobile sales CRM for iOS and Android. Integrates Gemini 2.5 Flash to generate personalized cold emails, WhatsApp messages, and call scripts. Features real-time team feeds, Kanban pipeline, and location-aware prospect discovery.",
     stack: ["React Native", "Expo", "TypeScript", "Supabase", "Gemini 2.5", "Google Maps"],
   },
@@ -174,16 +174,42 @@ const PROJECTS = [
     icon: "🗂️",
     iconBg: "rgba(0,212,170,0.1)",
     name: "IssueHub",
-    year: "2024",
+    year: "2025",
     live: false,
     github: "https://github.com/aftabnadeem",
     liveUrl: null,
     desc: "A lightweight Jira alternative with project creation, member invites, file-attached issues, Kanban drag-and-drop board, threaded comments, and role-based access control.",
     stack: ["React", "Spring Boot", "Java", "REST APIs"],
   },
-  // Add more projects here:
-  // { id: 3, icon: "🌐", iconBg: "rgba(0,212,170,0.1)", name: "...", year: "2025", live: true,
-  //   github: "https://...", liveUrl: "https://...", desc: "...", stack: ["React", "Node.js"] },
+  { id: 3, icon: "🛒", 
+    iconBg: "rgba(0,212,170,0.1)", 
+    name: "Gudfudco", 
+    year: "2025", 
+    live: true,
+    github: "https://...", 
+    liveUrl: "https://gudfudco.com", 
+    desc: "E commerce website which sells healthy snacks. Features advanced payment gateways, shipping, and returns. Includes a fully functional admin panel. Also has feature of customisable products for customers.", 
+    stack: ["React", "Django", "REST APIs", "Razorpay"] 
+  },
+    { id: 4, icon: "📋", 
+    iconBg: "rgba(0,212,170,0.1)", 
+    name: "Task management system", 
+    year: "2026", 
+    live: true,
+    github: "https://...", 
+    liveUrl: "https://greenbaytech.co.in", 
+    desc: "Task management system which allows users to create, edit, and delete tasks. Also has analystics and timesheet management to track time of each user and each project.", 
+    stack: ["React", "Django", "Crontab", "REST APIs"] },
+    { id: 5, 
+      icon: "💰", 
+    iconBg: "rgba(0,212,170,0.1)", 
+    name: "Cost build guide", 
+    year: "2026", 
+    live: true,
+    github: "https://...", 
+    liveUrl: "https://cost-build-guide.vercel.app", 
+    desc: "Cost build guide which allows users to calculate cost of project based on environmental impact, usage type, project lifecycle, and more. Gives overall cost variations across each material.", 
+    stack: ["React", "Django", "REST APIs"] },
 ];
 
 function GitHubIcon() {
@@ -423,7 +449,7 @@ export default function Portfolio() {
               <div className="project-card" style={{ borderStyle:"dashed", opacity:0.5, justifyContent:"center", alignItems:"center", textAlign:"center", minHeight:"220px" }}>
                 <div style={{ fontSize:"2rem", marginBottom:"0.5rem" }}>＋</div>
                 <div style={{ fontFamily:"'Syne',sans-serif", fontSize:"0.95rem", fontWeight:600, color:"var(--muted)" }}>More coming soon</div>
-                <div style={{ fontSize:"0.8rem", color:"var(--muted)", marginTop:"4px" }}>Add your live projects in the PROJECTS array</div>
+                {/*<div style={{ fontSize:"0.8rem", color:"var(--muted)", marginTop:"4px" }}>Add your live projects in the PROJECTS array</div>*/}
               </div>
             </div>
           </FadeUp>
